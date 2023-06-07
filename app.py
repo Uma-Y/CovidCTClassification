@@ -55,7 +55,7 @@ else:
     with open('nb_nor.pk', 'rb') as pickle_file:
         nb = pickle.load(pickle_file)
     y_pred=nb.predict(img_lda)
-    st.write(y_pred[0])
+    #st.write(y_pred[0])
     if(y_pred[0]=='Covid'):
         cov = cov + 1
     else:
@@ -71,7 +71,7 @@ else:
     with open('rdge_heseg.pk', 'rb') as pickle_file:
         rdgclassifier = pickle.load(pickle_file)
     y_pred=rdgclassifier.predict(img_lda)
-    st.write(y_pred[0])
+    #st.write(y_pred[0])
     if(y_pred[0]=='Covid'):
         cov = cov + 1
     else:
@@ -84,7 +84,7 @@ else:
     with open('dt_heseg.pk', 'rb') as pickle_file:
         dt = pickle.load(pickle_file)
     y_pred=dt.predict(img_pca)
-    st.write(y_pred[0])
+    #st.write(y_pred[0])
     if(y_pred[0]=='Covid'):
         cov = cov + 1
     else:
@@ -100,7 +100,7 @@ else:
     with open('svm_ahseg.pk', 'rb') as pickle_file:
         svm = pickle.load(pickle_file)
     y_pred=svm.predict(img_lda)
-    st.write(y_pred[0])
+    #st.write(y_pred[0])
     if(y_pred[0]=='Covid'):
         cov = cov + 1
     else:
@@ -116,7 +116,7 @@ else:
     with open('dt_ahnor.pk', 'rb') as pickle_file:
         dt = pickle.load(pickle_file)
     y_pred=dt.predict(img_pca)
-    st.write(y_pred[0])
+    #st.write(y_pred[0])
     if(y_pred[0]=='Covid'):
         cov = cov + 1
     else:
