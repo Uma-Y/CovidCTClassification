@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 st.title("COVID-19 Prediction Using Ensemble Learning")
-st.caption("This is a simple image classification web app to predict rock-paper-scissor hand sign")
+st.caption("Web app to predict Covid using CT Scans")
 file = st.file_uploader(label="Please upload CT image file", type=["jpg", "png"])
 
 if file is None:
